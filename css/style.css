@@ -1,0 +1,81 @@
+.post{
+    max-width: 650px;
+    width: 70%;
+    background-color: brown;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    
+ }
+ .overlay{
+     position: fixed;
+     top: 0;
+     left:70%;
+     background-color: burlywood;
+     width: 30%;
+     height: 40%;
+     border-radius: 15px;
+     display: none;
+     cursor: pointer;
+ }
+ .close{
+     font-size: 25px;
+     position: absolute;
+     right: 5px;
+     top: 10px;
+ }
+ .close:hover{
+     opacity: 0.3;
+     transition: 0.5s;
+ }
+ .overlay.active{
+     display: block;
+ }
+ button{
+     border-radius: 10px;
+     border: none;
+     
+ }
+ button:hover{
+     opacity: 0.5;
+     transition: all 0.5s;
+ }
+ .deletebtn{
+     background-color: brown;
+ }
+ .deletebtn::before{
+    content: '\21D4	';
+    font-size: 30px;
+    
+ }
+ .add{
+     position: fixed;
+     left: 70%;
+     font-size: 40px;
+ }
+ .overlay-add{
+     position: fixed;
+     top: 5%;
+     left: 50%;
+     width: 20%;
+     height: 20%;
+     background-color: chocolate;
+     border:2px solid black;
+     border-radius: 20px;
+     display: none;
+ }
+ .overlay-add.addactive{
+     display: block;
+ }
+ #form-add{
+     padding: 20px;
+ }
+ .addbtn{
+     background-color: chocolate;
+ }
+ .addbtn::before{
+     content: '\221A';
+     font-size: 30px;
+ }
